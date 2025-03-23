@@ -13,7 +13,7 @@ headers = {
 # Load Data (Replace with actual file path in production)
 file_path = "AuraLevel.csv"
 data = pd.read_csv(file_path)
-imagedb = pd.read_json("dataset.json")
+imagedb = pd.read_csv("imagedb.csv")
 imagedb = imagedb[["username", "profilePicUrlHD"]]
 # Sort by Rank
 sorted_data = data.sort_values(by="rank", ascending=True)
